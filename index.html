@@ -1,8 +1,9 @@
-
+<div class="container">
 <button>Натисни тук, ако си искаш валентинката...</button>
 <button>Айде още един път</button>
 <button>Последно...</button>
 <h1>I love you &#60;3</h1>
+</div>
 <script defer>
 
     let buttons = document.querySelectorAll('button');
@@ -26,9 +27,6 @@
         width: 80vw;
         padding: 2rem;
         font-size: 64px;
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%, 10%);
     }
     button:nth-child(2){
         display:none;
@@ -41,5 +39,12 @@
     text-align: center;
     color: red;
     display: none;
+    }
+    .container{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        width:100vw;
+        height: 100vh;
     }
 </style>
